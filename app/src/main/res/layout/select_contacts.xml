@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectContactsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SEND SMS TO:"/>
+
+        <RadioGroup
+            android:id="@+id/selectContactsRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/allContactsRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="ALL CONTACTS" />
+
+            <RadioButton
+                android:id="@+id/contactGroupsRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACT GROUPS" />
+
+            <RadioButton
+                android:id="@+id/startWithXRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACTS THAT START WITH:">
+
+
+            </RadioButton>
+            <EditText
+                android:id="@+id/editTextStartWithX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="A"
+                android:inputType="none"
+                android:focusable="false"
+                android:textColor="@color/grey"/>
+
+            <RadioButton
+                android:id="@+id/notStartWithXRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACTS THAT DO NOT START WITH:" />
+            <EditText
+                android:id="@+id/editTextNotStartWithX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/grey"
+                android:text="C"
+                android:inputType="none"
+                android:focusable="false" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSelectFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACTS FROM FILE:">
+            </RadioButton>
+            <TextView
+                android:id="@+id/textViewFilePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Select File."
+                android:enabled="false"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:layout_alignParentRight="true"   />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

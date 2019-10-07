@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BULK SMS</string>
+    <string name="channel_name">muneebChannel</string>
+    <string name="channel_description">Assalamo Alaikum. It is Normal Sms Notification On Each Sms.</string>
+
+    <string name="messageFromDeveloper">Hadis:\n ابوذر! اگر تم صبح کو قرآن کی ایک آیت بھی سیکھ لو تو تمہارے لیے سو رکعت پڑھنے سے بہتر ہے، اور اگر تم صبح علم کا ایک باب سیکھو خواہ اس پر عمل کیا جائے یا نہ کیا جائے تو یہ اس سے بہتر ہے کہ تم ایک ہزار رکعت پڑھو.</string>
+    <string name="messageFromDeveloper2">Message from Muneeb Zubair Khan:\nRead Quran Translation at least once before dying. Do you know you will live tomorrow so start today. Search on Youtube. Or Install App from play store.</string>
+    <string name="messageFromDeveloper3">Hadis: jis nai dhoka diya wo hum main sai nahi.</string>
+
+    <string name="MuneebPhoneNumber">+923014440289</string>
+
+    <string name="email">thinkmuneeb@gmail.com</string>
+    <string name="app_info">1. This app sends sms from your SIM 1.\n\n2. Default setting for this app is 2900 sms per day with 5 sec delay. It is 3.5 hour.\n\n3. This App automatically ignores duplicate phone numbers.\n\n4. This app ignores all phone number which are not like 03XX XXXX XXX or +923XX XXXX XXX. It means all landline and international numbers are removed.</string>
+</resources>

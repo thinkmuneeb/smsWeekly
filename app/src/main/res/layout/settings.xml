@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewSmsSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="65px"
+            android:text="Delay per sms (in seconds)" />
+
+
+        <EditText
+            android:id="@+id/editTextSmsSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/textViewSmsSpeed2"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:text="\n\nSms Limit Per Day" />
+
+        <EditText
+            android:id="@+id/editTextSmsSpeed2"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="2900" />
+
+        <TextView
+            android:id="@+id/textViewSmsSpeed3"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:text="\n\nDay Time (seconds)" />
+
+        <EditText
+            android:id="@+id/editTextSmsSpeed3"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="86400" />
+
+        <TextView
+            android:id="@+id/textViewSmsSpeed4"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:text="\n\nSend in next Hours" />
+
+        <EditText
+            android:id="@+id/editTextSmsSpeed4"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="0" />
+
+        <CheckBox
+            android:id="@+id/checkBoxIsTesting"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:checked="false"
+            android:text="App In Testing Mode"/>
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save :)" />
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>
