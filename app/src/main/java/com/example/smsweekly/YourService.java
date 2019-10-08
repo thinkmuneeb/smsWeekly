@@ -401,15 +401,15 @@ public class YourService extends Service {
         if (message.size() == 1)
         {
             String nuktay = arrPermutation[smsSentAttempt%120];
-            text =  nuktay + "\n" + text;
+            //text =  nuktay + "\n" + text;
             message = smsManager.divideMessage(text);
         }
-        else if (message.size() == 2)
+        /*else if (message.size() == 2)
         {
             String nuktay = arrPermutation[smsSentAttempt%120];
-            text =  nuktay + "\n" + text + "\n" + nuktay;
+            //text =  nuktay + "\n" + text + "\n" + nuktay;
             message = smsManager.divideMessage(text);
-        }
+        }*/
         else
         {
             endService();
@@ -883,7 +883,7 @@ public class YourService extends Service {
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         StringBuilder sb = new StringBuilder();
         String line = null;
-        Boolean firstLine = true;
+        boolean firstLine = true;
         while ((line = reader.readLine()) != null) {
             //Util.log(preference, editor,  line);
             if(firstLine){

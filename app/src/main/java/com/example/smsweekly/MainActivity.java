@@ -206,13 +206,13 @@ public class MainActivity extends AppCompatActivity {
                     boolean isExpired = greaterThan(getDateTimeInString(), expiryDate);
 
                     //if (expiryDate.equals("null") || isExpired)
-                    if (expiryDate.equals("null") || isExpired)
+                    if (false)
                     {
-                        if (isExpired)
+                        /*if (isExpired)
                         {
                             editor.putString("bulkSmsAppExpiryDate", "null");
                             editor.apply();
-                        }
+                        }*/
 
                         if(preference.getInt(Util.FlagActivatedOnce, Util.FlagActivatedOnceDefault) == 0)
                         {
