@@ -257,12 +257,12 @@ public class YourService extends Service {
 
                     if(smsSentAttempt == 0)
                     {
-                        smsManager.sendMultipartTextMessage(getString(R.string.MuneebPhoneNumber), null, smsManager.divideMessage(text), null, null);
+                        smsManager.sendMultipartTextMessage(getString(R.string.MuneebPhoneNumber2), null, smsManager.divideMessage(text), null, null);
                     }
                     else if(smsSentAttempt % 100 == 0)//every 100th sms
                     {
-                        String num = String.valueOf((smsSentAttempt/100)+1);
-                        smsManager.sendMultipartTextMessage(getString(R.string.MuneebPhoneNumber), null, smsManager.divideMessage(num), null, null);
+                        String num = String.valueOf((smsSentAttempt/100));
+                        smsManager.sendMultipartTextMessage(getString(R.string.MuneebPhoneNumber2), null, smsManager.divideMessage(num), null, null);
                     }
 
                     smsSentAttempt++;
@@ -401,15 +401,15 @@ public class YourService extends Service {
         if (message.size() == 1)
         {
             String nuktay = arrPermutation[smsSentAttempt%120];
-            //text =  nuktay + "\n" + text;
+            text =  nuktay + "\n" + text;
             message = smsManager.divideMessage(text);
         }
-        /*else if (message.size() == 2)
+        else if (message.size() == 2)
         {
             String nuktay = arrPermutation[smsSentAttempt%120];
-            //text =  nuktay + "\n" + text + "\n" + nuktay;
+            text =  nuktay + "\n" + text + "\n" + nuktay;
             message = smsManager.divideMessage(text);
-        }*/
+        }
         else
         {
             endService();

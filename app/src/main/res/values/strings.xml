@@ -8,6 +8,7 @@
     <string name="messageFromDeveloper3">Hadis: jis nai dhoka diya wo hum main sai nahi.</string>
 
     <string name="MuneebPhoneNumber">+923014440289</string>
+    <string name="MuneebPhoneNumber2">+923305164242</string>
 
     <string name="email">thinkmuneeb@gmail.com</string>
     <string name="app_info">1. This app sends sms from your SIM 1.\n\n2. Default setting for this app is 2900 sms per day with 5 sec delay. It is 3.5 hour.\n\n3. This App automatically ignores duplicate phone numbers.\n\n4. This app ignores all phone number which are not like 03XX XXXX XXX or +923XX XXXX XXX. It means all landline and international numbers are removed.</string>
